@@ -1,5 +1,5 @@
 class Solution
-{ // Binary Search Approach
+{ // Binary Search a
 public:
     int fnd1st(vector<int> &nums, int fst, int lst, int tg)
     { // fnding 1st occ of tg
