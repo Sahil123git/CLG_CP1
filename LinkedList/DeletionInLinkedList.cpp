@@ -12,6 +12,14 @@ public:
         next = NULL;
     }
 };
+void printLL(Node* &head){
+    Node* curr = head;
+    while(curr!=NULL){
+        cout<<curr->data<<" ";
+        curr = curr->next;
+    }
+    cout<<endl;
+}
 void addAtFront(Node **Rhead, Node *head, int data)
 {
     if (Rhead == NULL)
@@ -92,7 +100,7 @@ int main()
 {
     Node *head, *temp;
     temp = head = NULL;
-
+    //
     Node *dummyNode = new Node(-1);
     addAtFront(&head, temp, 2);
     temp = head;
