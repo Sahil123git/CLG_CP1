@@ -46,7 +46,7 @@ Node *addAtEnd(Node *head, int data)
     // {
     //     head = head->next;
     // }
-    head->next = new Node(data); // here we r chngng head->next (next) which is a global var of class changes done on (next var)  and data var will be visible across the program
+    head->next = new Node(data); // here we are changing head->next (next) which is a global var of class changes done on (next var)  and data var will be visible across the program
     return head->next;
 }
 
@@ -93,7 +93,7 @@ void refPrintLL(Node **head) // nwo this is call by ref
     while ((*head) != NULL)  //(*head) is used to dereference head to node
     {
         cout << (*head)->data << " ";
-        (*head) = (*head)->next; // these chngs are permanent as head is call by ref
+        (*head) = (*head)->next; // these changes are permanent as head is call by ref
     }
 }
 int main()
